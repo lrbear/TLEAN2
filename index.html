@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TLEAN</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+nav h1 {
+  color: #38bdf8;
+  font-size: 22px;
+}
+
+nav a {
+  color: #cbd5e1;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h2 {
+  font-size: 48px;
+  color: white;
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #94a3b8;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 24px;
+  background: #38bdf8;
+  color: #0f172a;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 60px;
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #273449;
+}
+
+/* CONTACT */
+input, textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #1e293b;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>TLEAN</h1>
+  <div>
+    <a href="#projeler">Projeler</a>
+    <a href="#yetenekler">Yetenekler</a>
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="#iletisim">İletişim</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h2>Modern Web Deneyimi</h2>
+  <p>Projelerimi, yeteneklerimi ve hizmetlerimi keşfet</p>
+  <a class="btn" href="#projeler">Başla</a>
+</div>
+
+<section id="projeler">
+  <h3>Projeler</h3>
+  <div class="grid">
+    <div class="card">🚀 Proje 1</div>
+    <div class="card">🎮 Proje 2</div>
+    <div class="card">🌐 Proje 3</div>
+  </div>
+</section>
+
+<section id="yetenekler">
+  <h3>Yetenekler</h3>
+  <div class="grid">
+    <div class="card">HTML / CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">GitHub Pages</div>
+  </div>
+</section>
+
+<section id="hizmetler">
+  <h3>Hizmetler</h3>
+  <div class="grid">
+    <div class="card">Web Site Tasarımı</div>
+    <div class="card">Frontend Geliştirme</div>
+    <div class="card">UI Tasarım</div>
+  </div>
+</section>
+
+<section id="iletisim">
+  <h3>İletişim</h3>
+  <input type="text" placeholder="İsim">
+  <input type="email" placeholder="E-posta">
+  <textarea rows="5" placeholder="Mesaj"></textarea>
+  <a class="btn" href="#">Gönder</a>
+</section>
+
+<footer>
+  © 2026 TLEAN - Tüm hakları saklıdır
+</footer>
+
+</body>
+</html>
