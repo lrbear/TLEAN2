@@ -1,199 +1,37 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TLEAN // SYSTEM ONLINE</title>
+<section id="contact" class="contact-section" data-aos="fade-up">
+    <h2 class="contact-title">CONTACT TERMINAL</h2>
 
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <form class="contact-form">
+        <input type="text" placeholder="👤 Ad Soyad" required>
 
-<style>
-body {
-  margin:0;
-  font-family: monospace;
-  background:#05070f;
-  color:#00ff88;
-}
+        <input type="email" placeholder="📧 E-posta" required>
 
-/* NAV */
-nav {
-  display:flex;
-  justify-content:space-between;
-  padding:18px 40px;
-  border-bottom:1px solid #00ff88;
-  background:rgba(0,0,0,0.7);
-}
+        <select required>
+            <option value="">🎮 Oyun Kategorisi Seç</option>
+            <option>🎮 Roblox</option>
+            <option>🔴 Valorant</option>
+            <option>🟡 PUBG Mobile</option>
+            <option>🟣 Brawl Stars</option>
+            <option>💬 Diğer</option>
+        </select>
 
-nav h1 {
-  font-size:18px;
-  text-shadow:0 0 10px #00ff88;
-}
+        <input type="text" placeholder="📌 Konu" required>
 
-nav a {
-  color:#00ff88;
-  text-decoration:none;
-  margin-left:15px;
-}
+        <select required>
+            <option value="">⚡ Öncelik</option>
+            <option>Düşük</option>
+            <option selected>Normal</option>
+            <option>Yüksek</option>
+        </select>
 
-nav a:hover {
-  text-shadow:0 0 10px #00ff88;
-}
+        <textarea rows="6" placeholder="💬 Mesajınızı yazın..." required></textarea>
 
-/* HERO */
-.hero {
-  text-align:center;
-  padding:120px 20px;
-}
+        <div class="contact-links">
+            <a href="mailto:seninmailin@gmail.com">📧 Gmail</a>
+            <a href="https://discord.com/users/KULLANICI_ID" target="_blank">🟢 Discord</a>
+            <a href="https://github.com/lrbear" target="_blank">🐙 GitHub</a>
+        </div>
 
-.hero h2 {
-  font-size:42px;
-  text-shadow:0 0 15px #00ff88;
-}
-
-.hero p {
-  color:#66ffcc;
-}
-
-/* SECTIONS */
-section {
-  padding:70px 40px;
-  max-width:1000px;
-  margin:auto;
-}
-
-h3 {
-  color:#00ff88;
-  margin-bottom:20px;
-  text-shadow:0 0 8px #00ff88;
-}
-
-/* GRID */
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:15px;
-}
-
-.card {
-  border:1px solid #00ff88;
-  padding:15px;
-  border-radius:10px;
-  background:#0b1220;
-  transition:0.3s;
-}
-
-.card:hover {
-  box-shadow:0 0 20px #00ff88;
-  transform:translateY(-5px);
-}
-
-/* CONTACT */
-.contact {
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-input, textarea {
-  background:#0b1220;
-  border:1px solid #00ff88;
-  color:#00ff88;
-  padding:10px;
-  border-radius:8px;
-  outline:none;
-}
-
-button {
-  background:#00ff88;
-  color:#000;
-  padding:10px;
-  border:none;
-  cursor:pointer;
-  font-weight:bold;
-  border-radius:8px;
-}
-
-button:hover {
-  box-shadow:0 0 15px #00ff88;
-}
-
-/* FOOTER */
-footer {
-  text-align:center;
-  padding:30px;
-  color:#006644;
-}
-</style>
-</head>
-
-<body>
-
-<nav>
-  <h1>💀 TLEAN</h1>
-  <div>
-    <a href="#projects">PROJECTS</a>
-    <a href="#skills">SKILLS</a>
-    <a href="#contact">CONTACT</a>
-  </div>
-</nav>
-
-<div class="hero" data-aos="fade-down">
-  <h2>SYSTEM ONLINE</h2>
-  <p>Cyber Portfolio / Game UI / Developer Mode</p>
-</div>
-
-<section id="projects">
-  <h3 data-aos="fade-right">> PROJECTS</h3>
-
-  <div class="grid">
-    <div class="card" data-aos="zoom-in">▣ FPS Optimizer Tool</div>
-    <div class="card" data-aos="zoom-in" data-aos-delay="100">▣ Game UI System</div>
-    <div class="card" data-aos="zoom-in" data-aos-delay="200">▣ Portfolio Engine</div>
-  </div>
+        <button type="submit">🚀 SEND TRANSMISSION</button>
+    </form>
 </section>
-
-<section id="skills">
-  <h3 data-aos="fade-right">> SKILLS</h3>
-
-  <div class="grid">
-    <div class="card" data-aos="flip-left">HTML / CSS</div>
-    <div class="card" data-aos="flip-left" data-aos-delay="100">JavaScript</div>
-    <div class="card" data-aos="flip-left" data-aos-delay="200">UI Design</div>
-  </div>
-</section>
-
-<section id="contact">
-  <h3 data-aos="fade-right">> CONTACT NODE</h3>
-
-  <div class="contact" data-aos="fade-up">
-    <input id="name" type="text" placeholder="Name">
-    <textarea id="message" rows="5" placeholder="Message"></textarea>
-    <button onclick="sendMail()">SEND TO SYSTEM</button>
-  </div>
-</section>
-
-<footer>
-  SYSTEM STATUS: ONLINE
-</footer>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-AOS.init({ duration: 900, once: true });
-
-// EmailJS
-emailjs.init("YOUR_PUBLIC_KEY");
-
-function sendMail() {
-  emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
-    from_name: document.getElementById("name").value,
-    message: document.getElementById("message").value
-  })
-  .then(() => alert("✔ MESSAGE SENT"))
-  .catch(() => alert("❌ ERROR"));
-}
-</script>
-
-</body>
-</html>
